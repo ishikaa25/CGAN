@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 # Generating data set + splitting functions
 
 
@@ -11,9 +8,8 @@ import math
 def make_samples(no_of_samples=100):
         
     images = np.full((no_of_samples,8,8),255)
-    
-    choices = [0,1]                             #Left or Right (OR) Top or bottom 
-    r_c = [1,2,3,4,5,6,7]                       #Width of darker region
+    #Left or Right (OR) Top or bottom 
+    r_c = [3,4,5]                       #Width of darker region
     labels = []
     
     for i in range(no_of_samples):
